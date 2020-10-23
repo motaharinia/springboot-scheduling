@@ -15,7 +15,7 @@ The simple rules that need to be followed to annotate a method with @Scheduled�
 - a method should not accept any parameters
 
 ### Cron:
-- * (all) – it is used to specify that event should happen for every time unit. For example, “*” in the <minute> field – means “for every minute”
+- \* (all) – it is used to specify that event should happen for every time unit. For example, “*” in the <minute> field – means “for every minute”
 - ? (any) – it is utilized in the <day-of-month> and <day-of -week> fields to denote the arbitrary value – neglect the field value. For example, if we want to fire a script at “5th of every month” irrespective of what the day of the week falls on that date, then we specify a “?” in the <day-of-week> field
 - – (range) – it is used to determine the value range. For example, “10-11” in <hour> field means “10th and 11th hours”
 - , (values) – it is used to specify multiple values. For example, “MON, WED, FRI” in <day-of-week> field means on the days “Monday, Wednesday, and Friday”
